@@ -5,11 +5,19 @@
 }
 
 /* Common CSS Styles */
+main{
+    background-image: url(../assets/bg.png);
+}
+
 nav .logo,
 nav .menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+hr {
+    border: 1px dashed lightgray;
 }
 
 body {
@@ -77,7 +85,8 @@ nav .menu ul li a {
     color: #fff;
 }
 
-.contact>button, .banner-section-left>button {
+.contact>button,
+.banner-section-left>button {
     padding: 15px 50px;
     border: none;
     color: rgb(255, 255, 255);
@@ -95,10 +104,9 @@ nav .menu ul li a {
 }
 
 .banner-section-left>h2 {
-    font-family: Quicksand;
     font-size: 58px;
     font-weight: 700;
-    line-height: 61px;
+    line-height: 70px;
     margin-top: 0;
 }
 
@@ -111,20 +119,109 @@ nav .menu ul li a {
     line-height: 26px;
 }
 
-.banner-section-left > button {
+.banner-section-left>button {
     margin-top: 30px;
     background-color: black;
 }
 
-.empowering{
+.empowering {
     color: rgb(254, 163, 1);
 }
 
-.towards{
+.towards {
     color: rgb(1, 172, 253);
 }
 
 .banner-section-right>img {
     width: 100%;
     height: 700px;
+}
+
+
+/* Curriculum section start here */
+
+.curriculum-section {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.curriculum-section>h2 {
+    color: rgb(0, 0, 0);
+    font-size: 46px;
+    font-weight: 700;
+    margin:60px 0 80px;
+}
+
+.curriculum-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 29px;
+}
+
+.curriculum-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 18px;
+    padding-bottom: 50px;
+}
+
+#kinder {
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    border: 0.94px solid rgb(222, 245, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+
+#elementary {
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    border: 0.94px solid rgb(255, 244, 220);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+#middle {
+    border: 0.94px solid rgb(242, 232, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.curriculum-card>img {
+    margin-top: 54px;
+}
+
+.curriculum-card>h2 {
+    color: rgb(32, 32, 32);
+    font-size: 24.52px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.curriculum-card>p {
+    color: rgb(128, 128, 128);
+    font-size: 15.09px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 33px;
+}
+
+.curriculum-card>p>a {
+    font-weight: 700;
+    text-decoration: none;
+    margin: 35px;
+}
+
+#read-one {
+    color: rgb(100, 200, 255);
+}
+
+#read-two {
+    color: rgb(240, 170, 0);
+}
+
+#read-three {
+    color: rgb(135, 0, 255);
+
 }
