@@ -24,8 +24,6 @@ nav {
     align-items: center;
 }
 
-nav .menu ul {}
-
 nav .menu ul li {
     list-style: none;
     padding: 20px;
@@ -51,38 +49,35 @@ nav .menu ul li a {
 
 #about {
     color: rgb(1, 172, 253);
-    border:1px dashed rgb(1, 172, 253);
+    border: 1px dashed rgb(1, 172, 253);
 }
+
 #about:hover {
     background-color: rgb(1, 172, 253);
     color: #fff;
 }
 
-#facilities{
+#facilities {
     color: rgb(5, 212, 223);
-    border:1px dashed rgb(5, 212, 223);
+    border: 1px dashed rgb(5, 212, 223);
 }
 
-#facilities:hover{
+#facilities:hover {
     background-color: rgb(5, 212, 223);
     color: #fff;
 }
 
-#admission{
+#admission {
     color: rgb(93, 88, 239);
-    border:1px dashed rgb(93, 88, 239);
+    border: 1px dashed rgb(93, 88, 239);
 }
 
-#admission:hover{
+#admission:hover {
     background-color: rgb(93, 88, 239);
     color: #fff;
 }
 
-.contact {
-    padding: 5px 20px;
-}
-
-.contact>button {
+.contact>button, .banner-section-left>button {
     padding: 15px 50px;
     border: none;
     color: rgb(255, 255, 255);
@@ -90,4 +85,46 @@ nav .menu ul li a {
     font-weight: 600;
     border-radius: 12px;
     background: rgb(254, 163, 1);
+}
+
+/* Banner Section styles here */
+.banner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-section-left>h2 {
+    font-family: Quicksand;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 61px;
+    margin-top: 0;
+}
+
+.banner-section-left>p {
+    margin-top: 30px;
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 400;
+    width: 65%;
+    line-height: 26px;
+}
+
+.banner-section-left > button {
+    margin-top: 30px;
+    background-color: black;
+}
+
+.empowering{
+    color: rgb(254, 163, 1);
+}
+
+.towards{
+    color: rgb(1, 172, 253);
+}
+
+.banner-section-right>img {
+    width: 100%;
+    height: 700px;
 }
