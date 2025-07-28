@@ -5,7 +5,7 @@
 }
 
 /* Common CSS Styles */
-main{
+main {
     background-image: url(../assets/bg.png);
 }
 
@@ -16,13 +16,18 @@ nav .menu ul {
     align-items: center;
 }
 
+header,
+.curriculum-section,
+.our-stories-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
 hr {
     border: 1px dashed lightgray;
 }
 
 body {
-    width: 80%;
-    margin: 0 auto;
     background: rgb(247, 247, 247);
 }
 
@@ -143,13 +148,18 @@ nav .menu ul li a {
 .curriculum-section {
     text-align: center;
     margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.curriculum-section>h2 {
+.curriculum-section>h2,
+.our-stories-section>h2 {
     color: rgb(0, 0, 0);
     font-size: 46px;
     font-weight: 700;
-    margin:60px 0 80px;
+    margin: 60px 0 80px;
 }
 
 .curriculum-card-container {
@@ -224,4 +234,129 @@ nav .menu ul li a {
 #read-three {
     color: rgb(135, 0, 255);
 
+}
+
+.arrow-sign {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.arrow-sign>p>i {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(254, 163, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Story Section styles here */
+.stories-container {
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+.our-stories-section {
+    padding-bottom: 100px;
+}
+
+.our-stories-section>h2 {
+    text-align: center;
+}
+
+
+.story-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+
+.story-row img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.story-one {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #fff;
+    position: relative;
+    border-radius: 20px;
+}
+
+.date {
+    position: absolute;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.date-one {
+    top: 400px;
+    left: 30px;
+    background: rgb(60, 216, 232);
+}
+
+.story-two,
+.story-three,
+.story-four,
+.story-five {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.story-two h2,
+.story-three h2,
+.story-four h2,
+.story-five h2 {
+    padding: 20px;
+}
+
+.date-two {
+    position: absolute;
+    background: rgb(149, 178, 38);
+    top: 150px;
+}
+
+.story-one>h2 {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 25px;
+}
+
+.story-one>p {
+    color: rgb(102, 102, 102);
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    padding: 0 25px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0 80px;
+}
+
+.button-section>button {
+    padding: 12px 40px;
+    color: #fff;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
 }
